@@ -6,9 +6,10 @@ package:
   version: 1.0.0.0
   kind: app
   description: |
+    com.cctv.deepin_6.0.0.2.1001deepin3_amd64
 
-base: org.deepin.base.wine
-runtime: org.deepin.runtime.wine
+base: org.deepin.base.wine/23.2.0.5
+runtime: org.deepin.runtime.wine/23.2.1.4
 
 command:
   - /opt/apps/com.cctv.deepin/files/run.sh
