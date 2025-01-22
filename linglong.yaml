@@ -19,10 +19,12 @@ sources:
     url: https://winedata-dev.deepin.com/apps/com.cctv.deepin/0e5a55a/signed_com.cctv.deepin_6.0.0.2.1001deepin5_amd64.deb
     digest: 5d1f19ff7dc362ca57d6d8f72915160345fb6099427db5706f6becd06d4a04ca
 
+
 build: |
   set -x
   SOURCES="linglong/sources"
   dpkg-deb -x $SOURCES/signed_com.cctv.deepin_6.0.0.2.1001deepin5_amd64.deb $SOURCES/com.cctv.deepin
+
   # run.sh替换
   FILE_PATH="$SOURCES/com.cctv.deepin/opt/apps/com.cctv.deepin/files/run.sh" 
   sed -i -e 's|/opt/deepin-wine8-stable|/runtime/deepin-wine8-stable|g' \
