@@ -3,7 +3,7 @@ version: "1"
 package:
   id: com.cctv.deepin
   name: com.cctv.deepin
-  version: 1.0.0.4
+  version: 1.0.0.5
   kind: app
   description: |
     com.cctv.deepin_6.0.0.2.1001deepin7_amd64.deb
